@@ -115,4 +115,4 @@ export const floatingCards = {
     title: "Smart Search",
     content: "Intelligent code search across your project",
   },
-};   
+};

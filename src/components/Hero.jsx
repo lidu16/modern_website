@@ -1,7 +1,7 @@
 import { ArrowRight, ChevronDown, Play, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
-import { codeExamples, floatingCards } from "../data/CodeExamples";
+import { codeExamples, floatingCards } from "../data/CodeExample";
 import { nightOwl } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 export default function Hero() {
@@ -42,13 +42,13 @@ export default function Hero() {
             </div>
 
             <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold mb-4 sm:mb-6 animate-in slide-in-from-bottom duration-700 delay-100 leading-tight">
-              <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
+              <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
                 Code Faster
               </span>
-              <span className="bg-gradient-to-b from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent block mb-1 sm:mb-2">
+              <span className="bg-linear-to-b from-blue-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent block mb-1 sm:mb-2">
                 Build Better
               </span>
-              <span className="bg-gradient-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
+              <span className="bg-linear-to-r from-white via-blue-100 to-cyan-100 bg-clip-text text-transparent block mb-1 sm:mb-2">
                 With CodeFlow AI
               </span>
             </h1>
@@ -60,7 +60,7 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-in-from-bottom duration-700 delay-300">
-              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-blue-600 to-blue-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
+              <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-linear-to-b from-blue-600 to-blue-400 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
                 <span>Start Coding Free</span>
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-300" />
               </button>
@@ -75,7 +75,7 @@ export default function Hero() {
           </div>
           <div className="relative order-2 w-full">
             <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-white/10">
-              <div className="bg-gradient-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[350px] lg:h-[450px] border border-white/5">
+              <div className="bg-linear-to-br from-gray-900/20 to-gray-800/20 backdrop-blur-sm rounded-lg overflow-hidden h-[280px] sm:h-[350px] lg:h-[450px] border border-white/5">
                 {/* IDE HEADER */}
                 <div className="flex items-center justify-between px-3 sm:px-4 py-2 sm:py-3 bg-white/5 backdrop-blur-sm border-b border-white/10">
                   <div className="flex items-center space-x-2">
@@ -127,7 +127,7 @@ export default function Hero() {
                   </div>
 
                   {/* Code Content */}
-                  <div className="relative overflow-hidden flex-grow">
+                  <div className="relative overflow-hidden grow">
                     <SyntaxHighlighter
                       language="javascript"
                       style={nightOwl}
